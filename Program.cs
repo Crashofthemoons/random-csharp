@@ -19,6 +19,7 @@ namespace random
             {
                 squared.Add(number^2);
             }
+            squared.RemoveAll(i => i%2 != 0);
             foreach (var number in squared)
             {
                 Console.WriteLine(number);
